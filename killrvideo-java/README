@@ -1,0 +1,6 @@
+A fork from the work of Luke Tillman killrvideo csharp app using java code.
+
+My fist idea is to use the same approach than Luke did and follow the DAO pattern from playlist 
+datastax sample. 
+
+The original site is https://github.com/LukeTillman/killrvideo-csharp
