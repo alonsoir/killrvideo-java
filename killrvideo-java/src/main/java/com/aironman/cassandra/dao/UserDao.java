@@ -58,7 +58,7 @@ public class UserDao extends CassandraData {
 	    //
 	    // Return the list of strings.
 	    //
-
+	    getSession().close();
 	    return users;
 	}
 	
@@ -105,7 +105,7 @@ public class UserDao extends CassandraData {
 	    //
 	    // Return the list of strings.
 	    //
-
+	    getSession().close();
 	    return users;
 	}
 }

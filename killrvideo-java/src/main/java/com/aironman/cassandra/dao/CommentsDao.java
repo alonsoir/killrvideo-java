@@ -54,7 +54,7 @@ public class CommentsDao extends CassandraData{
 		//
 		// Return the list of strings.
 		//
-
+		getSession().close();
 		return commentsUser;
 	}
 }

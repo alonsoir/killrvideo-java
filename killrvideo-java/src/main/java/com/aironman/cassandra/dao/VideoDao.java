@@ -58,7 +58,7 @@ public class VideoDao extends CassandraData {
 		//
 		// Return the list of strings.
 		//
-
+		getSession().close();
 		return uservideos;
 	}
 	
@@ -111,7 +111,7 @@ public class VideoDao extends CassandraData {
 		//
 		// Return the list of strings.
 		//
-
+		getSession().close();
 		return videos;
 	}
 }
