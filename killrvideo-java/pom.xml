@@ -4,13 +4,13 @@
 	<groupId>com.aironman.cassandra.samples</groupId>
 	<artifactId>killrvideo-java</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 	<!-- Skip tests by default Change this to false or run mvn -DskipTests=false 
 		to run the tests -->
 	<properties>
 		<skipTests>true</skipTests>
 		<cassandra-driver-core.version>2.1.7</cassandra-driver-core.version>
-		<!--  <javaee-web-api.version>7.0</javaee-web-api.version> -->
+		<javaee-web-api.version>7.0</javaee-web-api.version>
 		<junit.version>4.12</junit.version>
 		<slf4j-log4j12.version>1.7.12</slf4j-log4j12.version>
 		<cargo-maven2-plugin.version>1.4.13</cargo-maven2-plugin.version>
@@ -102,14 +102,12 @@
 			<artifactId>cassandra-driver-core</artifactId>
 			<version>${cassandra-driver-core.version}</version>
 		</dependency>
-		<!-- 
 		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-web-api</artifactId>
 			<version>${javaee-web-api.version}</version>
 			<scope>provided</scope>
 		</dependency>
-		 -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>

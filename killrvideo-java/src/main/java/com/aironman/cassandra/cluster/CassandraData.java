@@ -53,7 +53,7 @@ public class CassandraData {
 	 * Required constructor, but it doesn't need to do anything.
 	 */
 
-	CassandraData() {
+	public CassandraData() {
 		//doing nothing
 	}
 

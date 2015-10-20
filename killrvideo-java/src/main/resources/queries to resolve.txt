@@ -9,3 +9,62 @@ q8. Find a average rating with a known video id.
 q9. Find trailers for a video with a known id.
 q10. Find video interactions for a user with a known id and specified video id (show most recent interaction first)
 q11. Find actors for a video with a known id. 
+
+q1. Find a user with a specified email.
+
+// User credentials, keyed by email address so we can authenticate
+CREATE TABLE user_credentials (
+    email text,
+    password text,
+    userid uuid,
+    PRIMARY KEY (email)
+);
+
+q3. Find a user with a specified id.
+
+// Users keyed by id
+CREATE TABLE users (
+    userid uuid,
+    firstname text,
+    lastname text,
+    email text,
+    created_date timestamp,
+    PRIMARY KEY (userid)
+);
+
+
+q2. Find most recently uploaded videos.
+
+???
+
+q4. Find videos uploaded by a user with a known id(show most recently uploaded videos first)
+
+CREATE TABLE user_videos (
+    userid uuid,
+    added_date timestamp,
+    videoid uuid,
+    name text,
+    preview_image_location text,
+    PRIMARY KEY (userid, added_date, videoid)
+) WITH CLUSTERING ORDER BY (added_date DESC, videoid ASC);
+
+q5. Find a video with a specified video id
+
+CREATE TABLE videos (
+    videoid uuid,
+    userid uuid,
+    name text,
+    description text,
+    location text,
+    location_type int,
+    preview_image_location text,
+    tags set<text>,
+    added_date timestamp,
+    PRIMARY KEY (videoid)
+);
+
+q6. Find comments posted by a user with a known id (show most recently posted comments first)
+
+
+q7. Find comments posted for a video with a known id (show most recent comments first)
+
