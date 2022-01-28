@@ -11,7 +11,7 @@
 		<skipTests>true</skipTests>
 		<cassandra-driver-core.version>2.1.7</cassandra-driver-core.version>
 		<javaee-web-api.version>7.0</javaee-web-api.version>
-		<junit.version>4.12</junit.version>
+		<junit.version>4.13.2</junit.version>
 		<slf4j-log4j12.version>1.7.12</slf4j-log4j12.version>
 		<cargo-maven2-plugin.version>1.4.13</cargo-maven2-plugin.version>
 		<maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
@@ -80,7 +80,7 @@
 										</goals>
 									</pluginExecutionFilter>
 									<action>
-										<ignore />
+										<ignore/>
 									</action>
 								</pluginExecution>
 							</pluginExecutions>
