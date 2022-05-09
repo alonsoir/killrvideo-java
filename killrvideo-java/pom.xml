@@ -9,7 +9,7 @@
 		to run the tests -->
 	<properties>
 		<skipTests>true</skipTests>
-		<cassandra-driver-core.version>2.1.7</cassandra-driver-core.version>
+		<cassandra-driver-core.version>4.0.0</cassandra-driver-core.version>
 		<javaee-web-api.version>7.0</javaee-web-api.version>
 		<junit.version>4.12</junit.version>
 		<slf4j-log4j12.version>1.7.12</slf4j-log4j12.version>
@@ -80,7 +80,7 @@
 										</goals>
 									</pluginExecutionFilter>
 									<action>
-										<ignore />
+										<ignore/>
 									</action>
 								</pluginExecution>
 							</pluginExecutions>
